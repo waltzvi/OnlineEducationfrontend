@@ -4,6 +4,10 @@
     background: url("../../Img/study.png") no-repeat fixed;
     background-size: 100% 100%; 
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .UpdatePwd-MaxBox .UpdatePwd-MinBox{
@@ -19,8 +23,6 @@
     width: 650px;
     background-color: gainsboro;
     margin: 40px auto;
-    position: absolute;
-    right: 47%;
     padding: 20px 15px;
     border-radius: 5px;
     opacity:0.88; 
