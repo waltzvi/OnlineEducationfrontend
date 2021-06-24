@@ -89,12 +89,13 @@ class markWork extends Component {
                 }).then(resp => {
                     const { getNoMark } = this.state
                     if (resp.data.arg1 === '评分成功') {
+                        message.success('操作成功!')
                         //如果最后的未评试卷数为0，那么直接跳转到试卷页
                         if (getNoMark.length - 1 === 0) {
                             this.props.history.push('/teacher/papers')
-                            message.success('您已评完答卷!')
-                        }
-                        else this.componentDidMount()
+                            message.success('您已评完所有答卷!')
+                        } else this.componentDidMount()
+
 
                     } else {
                         console.log('评分失败');

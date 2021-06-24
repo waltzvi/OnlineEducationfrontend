@@ -51,6 +51,7 @@ class publishVideo extends Component {
             action: `http://localhost:8080/OnlineEducation/VideoController/upload?Tid=${Teacher.Tid}`,
             multiple: true,
             method: 'post',
+            accept: '.mp4',
             onChange: info => {
                 console.log("info", info);
                 const { status } = info.file;

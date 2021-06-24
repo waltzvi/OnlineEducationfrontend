@@ -81,7 +81,7 @@ export default class HadPutVideo extends Component {
                         onChange: page => {
                             console.log(page);
                         },
-                        pageSize: 3,
+                        pageSize: 8,
                     }}
                     dataSource={AllVideo}
                     footer={
