@@ -1,0 +1,29 @@
+.teacher-box{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .trigger {
+    font-size: 18px;
+    line-height: 80px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color:white;
+  }
+  .trigger:hover {
+    color:gray;
+  }
+  .logo {
+    position: relative;
+    left: 17%;
+    height: 31px;
+    line-height: 31px;
+    background: rgb(0, 21, 41);
+    text-align: center;
+    margin: 16px;
+    color: white;
+    min-width: 120px;
+    white-space: nowrap;
+  }

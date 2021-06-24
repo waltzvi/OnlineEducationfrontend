@@ -1,0 +1,9 @@
+.LeftTransfer_title{
+    /* 设置其采用省略号的形式 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}

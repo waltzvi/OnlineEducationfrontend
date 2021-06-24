@@ -1,0 +1,9 @@
+.video-section{
+    /* height:80%; */
+    width: 60%;
+    background-color:rgba(128, 128, 128, 0.096);
+    position: relative;
+    /* left:80px;   */
+    padding: 20px 15px;
+    border-radius: 5px;
+}

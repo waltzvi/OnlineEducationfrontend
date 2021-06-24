@@ -1,0 +1,30 @@
+.student-box{
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.trigger:hover {
+  color:gray;
+}
+.logo {
+  height: 31px;
+  width: 45px;
+  background:rgb(78, 71, 71);
+  margin: 16px;
+}
+.student-logo{
+  width: 20%;
+  height: 80%;
+  background-color:white;
+  position: relative;
+  top: -60px;
+  left: 1006px;
+}

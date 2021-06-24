@@ -1,0 +1,39 @@
+.register-section{
+    height: 500px;
+    width: 550px;
+    background-color: gainsboro;
+    margin: 40px auto;
+    position: absolute;
+    right: 41%;
+    padding: 20px 15px;
+    border-radius: 5px;
+    opacity:0.88; 
+}
+.register-section h1{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 210px;
+}
+.register-form {
+    max-width: 450px;
+    padding: 0 21px;
+}
+
+.register-form-button {
+    width: 70%;
+    
+}
+.register-form-icon-woman{
+    color:orchid;
+}
+.register-form-icon-man{
+    color:cornflowerblue    ;
+}
+.register-box{
+    width:100%;
+    height: 100%;
+    background: url("../../Img/study.png") no-repeat fixed;
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+  
+}

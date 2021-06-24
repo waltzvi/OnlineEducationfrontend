@@ -1,0 +1,9 @@
+.SAquestion-section{
+    height: 65%;
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.096);
+    /* margin: 30px auto; */
+    position: relative;
+    padding: 15px 15px;
+    border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+.MCquestion-section{
+    height: 60%;
+    width: 70%;
+    background-color: rgba(128, 128, 128, 0.096);
+    /* margin: 30px auto; */
+    position: relative;
+    /* right: 22%; */
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+.choice-checkbox{
+    display: flex;
+}
