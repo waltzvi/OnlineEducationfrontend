@@ -2,19 +2,23 @@ import React, { Component } from 'react'
 import { Input, List, Icon, Avatar, Tag } from 'antd';
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import memoryUtils from '../../../utils/memoryUtils';
 import './text.css'
 
 const { Search } = Input;
 
 export default class text extends Component {
     state = {
+        StudentInfo: memoryUtils.User,
         AllExam: [],
     }
     componentDidMount() {
+        console.log(this.state.StudentInfo);
         axios({
             baseURL: 'http://localhost:8080/OnlineEducation',
             method: 'get',
-            url: '/ExamController/findAllExam',
+            url: '/ExamController/TextPageFindAllExam',
+            params: { Sid: this.state.StudentInfo.Sid }
         }).then(resp => {
             console.log("resp的值", resp)
             console.log("resp.data的值", resp.data)
@@ -71,18 +75,14 @@ export default class text extends Component {
                 <List
                     itemLayout="vertical"
                     size="large"
-                    pagination={{
+                    locale={{ emptyText: '暂无未做试卷~' }}
+                    pagination={AllExam.length === 0 ? false : {
                         onChange: page => {
                             console.log(page);
                         },
                         pageSize: 8,
                     }}
                     dataSource={AllExam}
-                    footer={
-                        <div>
-                            <b>ant design</b> footer part
-                        </div>
-                    }
                     renderItem={item => (
                         <List.Item
                             key={item.title}

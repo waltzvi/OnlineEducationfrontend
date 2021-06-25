@@ -10,7 +10,6 @@ export default class FinishPaper extends Component {
         Student: memoryUtils.User
     }
     componentDidMount() {
-        console.log('componentDidMount-----------------');
         const data = {
             Sid: this.state.Student.Sid
         }

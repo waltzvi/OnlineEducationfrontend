@@ -2,18 +2,21 @@ import React, { Component } from 'react'
 import { Input, List, Icon, Avatar, Tag } from 'antd';
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import memoryUtils from '../../../utils/memoryUtils';
 import "./video.css"
 
 const { Search } = Input;
 export default class video extends Component {
     state = {
+        StudentInfo: memoryUtils.User,
         AllVideo: []
     }
     componentDidMount() {
         axios({
             baseURL: 'http://localhost:8080/OnlineEducation',
             method: 'get',
-            url: '/VideoController/findAllVideo',
+            url: '/VideoController/findAllVideoTextPage',
+            params: { Sid: this.state.StudentInfo.Sid }
         }).then(resp => {
             console.log("resp的值", resp)
             console.log("resp.data的值", resp.data)
@@ -75,7 +78,7 @@ export default class video extends Component {
                         onChange: page => {
                             console.log(page);
                         },
-                        pageSize: 3,
+                        pageSize: 8,
                     }}
                     dataSource={AllVideo}
                     footer={
